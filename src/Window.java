@@ -14,6 +14,7 @@ public class Window extends JFrame {
         panel.setBorder(BorderFactory.createLineBorder(Color.green,5));
 
         panel.add(new HealthBar(this));
+        panel.add(new HealthBar(this));
 
         this.getContentPane().add(panel);
 
