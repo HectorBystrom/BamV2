@@ -3,6 +3,8 @@ import java.awt.*;
 
 public class Window extends JFrame {
     //attributes
+    //constructor
+
     public Window() {
         this.setTitle("Bash a monster");
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -21,7 +23,6 @@ public class Window extends JFrame {
         this.pack();
         this.setVisible(true);
     }
-    //constructor
 
     //methods
 
