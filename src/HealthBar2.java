@@ -3,18 +3,17 @@ import java.awt.*;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.util.Random;
-//Class to make the health bar
-public class HealthBar extends JPanel implements MouseListener {
+
+public class HealthBar2 extends JPanel implements MouseListener {
     //Attributes
     Window myWindow;
     private int healthBarSize = 400;
     int upperBound = 40;
 
     //Constructor
-    public HealthBar(Window window) {
+    public HealthBar2(Window window) {
         myWindow = window;
         this.setBackground(Color.BLACK);
-        this.setPreferredSize(new Dimension(500, 250));
         this.addMouseListener(this);
 
     }
@@ -29,7 +28,7 @@ public class HealthBar extends JPanel implements MouseListener {
 
     //Set a color and size to the health bar
     public void drawHealthBar(Graphics g) {
-        g.setColor(Color.green);
+        g.setColor(Color.white);
         g.fillRect(50, 75, healthBarSize, 100);
     }
 

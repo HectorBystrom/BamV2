@@ -16,8 +16,10 @@ public class Window extends JFrame {
         panel.setBorder(BorderFactory.createLineBorder(Color.green,5));
 
         //Add the amount of health bars
-        panel.add(new HealthBar(this));
-        panel.add(new HealthBar(this));
+        for(int i=0; i<1;i++){
+            panel.add(new HealthBar(this));
+        }
+        panel.add(new HealthBar2(this));
 
         //Add it and make it visible
         this.getContentPane().add(panel);
